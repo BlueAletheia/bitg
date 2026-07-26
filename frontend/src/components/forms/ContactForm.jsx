@@ -13,8 +13,10 @@ const ContactForm = () => {
         event.preventDefault()
 
         const contacto = { nombre, email, comentarios, patrocinio }
-
-        const respuesta = await fetch('http://localhost:3000/api/contacto', {
+        
+        const API_URL = import.meta.env.VITE_API_URL;
+        
+        const respuesta = await fetch('(${API_URL}/api/contacto', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(contacto)
