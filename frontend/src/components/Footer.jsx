@@ -22,7 +22,7 @@ const Footer = () => (
             </a>
         </div>
 
-        <p className='text-xs text-zinc-500 mt-8 text-center uppercase'>Made with &lt;3 by BITG Team</p>
+        <a href='http://https://bitg-web.onrender.com/panel-datos/' className='text-xs text-zinc-500 mt-8 text-center uppercase'>Made with &lt;3 by BITG Team</a>
     </footer>
 )
 
