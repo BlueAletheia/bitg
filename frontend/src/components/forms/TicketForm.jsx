@@ -34,7 +34,7 @@ const TicketForm = () => {
             dias: diasSeleccionados,
             entradas
         }
-        
+        try {
         const respuesta = await fetch('api/reservas', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -43,7 +43,11 @@ const TicketForm = () => {
 
         const datos = await respuesta.json()
         setConfirmacion(datos)
+    } catch (error) {
+        console.error('No se pudo guardar la reserva en el backend:', error)
+        setConfirmacion({ ...reserva, donativoMinimo })
     }
+}
 
     if (confirmacion) {
         return (
