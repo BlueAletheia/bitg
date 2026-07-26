@@ -12,6 +12,10 @@ app.use(express.json())
 app.use('/api/reservas', reservasRoutes)
 app.use('/api/contacto', contactoRoutes)
 
+app.get('/', (req, res) => {
+    res.send('Backend de Back in the Game funcionando')
+})
+
 app.listen(PORT, () => {
     console.log(`Servidor escuchando en el puerto ${PORT}`)
 })
