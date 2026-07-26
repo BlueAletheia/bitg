@@ -3,6 +3,14 @@ import cors from 'cors'
 import reservasRoutes from './routes/reservas.routes.js'
 import contactoRoutes from './routes/contacto.routes.js'
 
+process.on('uncaughtException', (error) => {
+    console.error('ERROR NO CAPTURADO:', error)
+})
+
+process.on('unhandledRejection', (error) => {
+    console.error('PROMESA RECHAZADA SIN CAPTURAR:', error)
+})
+
 const app = express()
 const PORT = process.env.PORT || 3000
 
