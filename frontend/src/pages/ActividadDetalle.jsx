@@ -20,7 +20,7 @@ const ActividadDetalle = () => {
     return (
         <div className='bg-black text-white'>
 
-            <div className='w-full h-[420px] flex flex-col md:flex-row overflow-hidden'>
+            <div className='w-full h-[420px] flex md:flex-row overflow-hidden'>
                 <img src={actividad.imagen} alt={actividad.juego} className='w-full md:w-1/2 h-full object-cover' />
                 {artista && (
                     <img src={artista.imagen} alt={artista.nombre} className='w-full md:w-1/2 h-full object-cover' />

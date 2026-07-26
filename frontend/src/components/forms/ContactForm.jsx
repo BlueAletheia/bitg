@@ -13,22 +13,21 @@ const ContactForm = () => {
         event.preventDefault()
 
         const contacto = { nombre, email, comentarios, patrocinio }
-        
+
         try {
-        const respuesta = await fetch('api/contacto', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(contacto)
-        })
+            const respuesta = await fetch('api/contacto', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(contacto)
+            })
 
-        await respuesta.json()
-        setEnviado(true)
-    }catch (error) {
-        console.error('No se pudo guardar el mensaje en el backend:', error)
-        setConfirmacion({ ...contacto, donativoMinimo })
+            await respuesta.json()
+            setEnviado(true)
+        } catch (error) {
+            console.error('No se pudo guardar el mensaje en el backend:', error)
+            setEnviado(true)
+        }
     }
-}
-
 
     if (enviado) {
         return (
