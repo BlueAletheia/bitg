@@ -34,10 +34,8 @@ const TicketForm = () => {
             dias: diasSeleccionados,
             entradas
         }
-
-        const API_URL = import.meta.env.VITE_API_URL;
         
-        const respuesta = await fetch('(${API_URL}/api/reservas', {
+        const respuesta = await fetch('api/reservas', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(reserva)
