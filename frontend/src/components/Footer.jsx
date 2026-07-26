@@ -20,9 +20,12 @@ const Footer = () => (
             <a href='#' target='_blank' rel='noopener noreferrer' className='w-9 h-9 flex items-center justify-center border border-[#FFFD30]'>
                 <img src={twitterIcon} alt='X' className='w-5 h-5' />
             </a>
+                <Link to="/panel-datos" className='text-2xl font-bold uppercase text-[#FFFD30]'>
+                        DDBB
+                </Link>
         </div>
 
-        <a href='/panel-datos' className='text-xs text-zinc-500 mt-8 text-center uppercase'>Made with &lt;3 by BITG Team</a>
+        <p className='text-xs text-zinc-500 mt-8 text-center uppercase'>Made with &lt;3 by BITG Team</p>
     </footer>
 )
 
