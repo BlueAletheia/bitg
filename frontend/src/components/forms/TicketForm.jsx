@@ -35,7 +35,9 @@ const TicketForm = () => {
             entradas
         }
 
-        const respuesta = await fetch('http://localhost:3000/api/reservas', {
+        const API_URL = import.meta.env.VITE_API_URL;
+        
+        const respuesta = await fetch('(${API_URL}/api/reservas', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(reserva)
