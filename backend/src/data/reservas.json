@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1784934508018,
+    "nombre": "asd",
+    "apellidos": "asd",
+    "email": "asd@asda.asd",
+    "dias": [
+      "Miércoles",
+      "Jueves",
+      "Viernes"
+    ],
+    "entradas": 2,
+    "donativoMinimo": 6
+  },
+  {
+    "id": 1785065252242,
+    "nombre": "ose Antonio",
+    "apellidos": "Rosello Lope8",
+    "email": "awas831996@gmail.co",
+    "dias": [
+      "Lunes",
+      "Miércoles",
+      "Viernes",
+      "Domingo"
+    ],
+    "entradas": 1,
+    "donativoMinimo": 4
+  }
+]

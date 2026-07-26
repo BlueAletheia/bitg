@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Akira';
+    src: url('./assets/fonts/Akira_Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Akira';
+    src: url('./assets/fonts/Akira_Super_Bold.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Akira Outline';
+    src: url('./assets/fonts/Akira_Outline.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'N27';
+    src: url('./assets/fonts/N27-Thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'N27';
+    src: url('./assets/fonts/N27-ThinItalic.otf') format('opentype');
+    font-weight: 100;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'N27';
+    src: url('./assets/fonts/N27-ExtraLight.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'N27';
+    src: url('./assets/fonts/N27-ExtraLightItalic.otf') format('opentype');
+    font-weight: 200;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'N27';
+    src: url('./assets/fonts/N27-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'N27';
+    src: url('./assets/fonts/N27-LightItalic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'N27';
+    src: url('./assets/fonts/N27-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'N27';
+    src: url('./assets/fonts/N27-RegularItalic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'N27';
+    src: url('./assets/fonts/N27-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'N27';
+    src: url('./assets/fonts/N27-MediumItalic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'N27';
+    src: url('./assets/fonts/N27-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'N27';
+    src: url('./assets/fonts/N27-BoldItalic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@theme {
+    --font-akira: 'Akira', sans-serif;
+    --font-akira-outline: 'Akira Outline', sans-serif;
+    --font-n27: 'N27', sans-serif;
+}
+
+@layer base {
+    h1, h2, h3, h4, h5, h6 {
+        font-family: theme(--font-akira);
+    }
+
+    p {
+        font-family: theme(--font-n27);
+    }
+}
